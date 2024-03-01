@@ -65,7 +65,7 @@ body {
   gap: 4rem;
 }
 .ContentWrapper > .Logo {
-  width: 700px;
+  width: 800px;
   height: 400px;
   background-image: url(sources/Shrek.png);
   background-repeat: no-repeat;
@@ -119,6 +119,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .Conferir {
   display: flex;
   align-items: center;
@@ -162,9 +163,10 @@ body {
 }
 .NavButtons a button:hover,
 .NavButtons button:hover {
-  border-bottom: 2px solid white;
-  padding-bottom: 2px;
   cursor: pointer;
+}
+.wide {
+  width: 100%;
 }
 
 .slider {
@@ -256,8 +258,14 @@ body {
 #posterS {
   background-image: url(sources/prod/placa1.png);
 }
-#posterF {
+#posterS:hover {
   background-image: url(sources/prod/placa2.png);
+}
+#camisa {
+  background-image: url(sources/prod/camisa1.png);
+}
+#camisa:hover {
+  background-image: url(sources/prod/camisa2.png);
 }
 .preto {
   color: black;
@@ -317,5 +325,12 @@ body {
   font-size: 1rem;
 }
 .Remove {
+  color: black;
+}
+.Esgotado {
+  border: 5px solid rgb(216, 221, 197);
+}
+.Esgotado:hover {
+  background-color: rgb(216, 221, 197);
   color: black;
 }
