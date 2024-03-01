@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+* {
+  letter-spacing: 0.4rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url(sources/fundo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 999;
+}
+.lista {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 75%;
+  overflow: visible;
+}
+.buttonOr {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.innerModal {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  width: 80%;
+  height: 80%;
+}
+.active {
+  display: flex;
+}
+
+.ContentWrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+  gap: 4rem;
+}
+.ContentWrapper > .Logo {
+  width: 700px;
+  height: 400px;
+  background-image: url(sources/Shrek.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+}
+.MovieContent {
+  gap: 2rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.Texto {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#titulo {
+  width: 100%;
+  height: 20%;
+  background-image: url(sources/Shrek1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#conteudo {
+  padding-top: 4rem;
+  width: 100%;
+  height: 80%;
+  font-size: large;
+  color: #fff;
+}
+
+.NavBar {
+  position: fixed;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+}
+.NavBar > .Logo {
+  width: 10%;
+  height: 75px;
+  background-image: url(sources/Shrek.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Conferir {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  opacity: 100%;
+  border: 5px solid rgb(180, 211, 51);
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background-color: transparent;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: 0.1s;
+}
+
+.Conferir:hover {
+  background-color: rgb(180, 211, 51);
+}
+.NavButtons {
+  width: 90%;
+  height: 100%;
+  flex-direction: row;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 12px;
+}
+.NavButtons a button,
+.NavButtons button {
+  background-color: transparent;
+  border: none;
+  width: 8rem;
+  height: 2rem;
+  font-size: large;
+  color: #fff;
+}
+.NavButtons a button:hover,
+.NavButtons button:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+
+.slider {
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+}
+.slides {
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+.slides > input {
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+  transition: 0.7s;
+}
+.slide img {
+  width: 800px;
+}
+.manual-navigation {
+  gap: 1rem;
+  position: absolute;
+  margin-top: 20px;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+}
+.manual-btn {
+  border: 3px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.manual-btn:hover {
+  background-color: #fff;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+#radio4:checked ~ .first {
+  margin-left: -75%;
+}
+#t1 {
+  font-size: 8rem;
+  color: #fff;
+  margin-bottom: 6rem;
+}
+
+.Card {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 75%;
+}
+#bonequinho {
+  background-image: url(sources/prod/bonequinho.png);
+}
+#sacola {
+  background-image: url(sources/prod/bolsa1.png);
+}
+#sacola:hover {
+  background-image: url(sources/prod/bolsa2.png);
+}
+#gorro {
+  background-image: url(sources/prod/gorro.png);
+}
+#sapato {
+  background-image: url(sources/prod/sapato.png);
+}
+#sapato:hover {
+  background-image: url(sources/prod/sapato1.png);
+}
+#posterS {
+  background-image: url(sources/prod/placa1.png);
+}
+#posterF {
+  background-image: url(sources/prod/placa2.png);
+}
+.preto {
+  color: black;
+  width: 25%;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+.imgprod {
+  width: 100%;
+  height: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.nomeprod p,
+.precoprod p {
+  color: white;
+  font-size: 2rem;
+}
+@media (max-width: 762px) {
+  .row {
+    flex-direction: column;
+    gap: 3.5rem;
+    height: 250vh;
+  }
+  #t1 {
+    font-size: 3rem;
+  }
+  .Card {
+    width: 70%;
+    height: 30%;
+  }
+  .MovieContent {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+.Item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30%;
+  align-items: center;
+}
+.ItemImage {
+  height: 90%;
+  width: 15%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ItemName {
+  width: 60%;
+}
+.ItemName p {
+  color: black;
+  font-size: 1rem;
+}
+.Remove {
+  color: black;
+}

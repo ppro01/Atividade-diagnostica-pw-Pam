@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="NavBar">
+      <div class="Logo"></div>
+      <div class="NavButtons">
+        <a href="lojasite.html"><button>Loja</button></a>
+      </div>
+    </div>
+    <div class="ContentWrapper">
+      <div class="Logo"></div>
+      <a href="#go"><button class="Conferir">Confira o Nosso Site</button></a>
+    </div>
+    <div class="MovieContent" id="go">
+      <div class="slider">
+        <div class="slides">
+          <!--Radio Buttons-->
+          <input type="radio" name="radiobtn" id="radio1" />
+          <input type="radio" name="radiobtn" id="radio2" />
+          <input type="radio" name="radiobtn" id="radio3" />
+          <input type="radio" name="radiobtn" id="radio4" />
+          <!--Fim do RadioButtons-->
+
+          <!--Imagens Dos Slides-->
+          <div class="slide first">
+            <img src="sources/filme1.jpg" alt="Shrek1" />
+          </div>
+          <div class="slide">
+            <img src="sources/shrek2.jpg" alt="Shrek2" />
+          </div>
+          <div class="slide">
+            <img src="sources/filme3.jpg" alt="Shrek3" />
+          </div>
+          <div class="slide">
+            <img src="sources/filme4.jpg" alt="Shrek4" />
+          </div>
+          <!--Fim Das Imagens Dos Slides-->
+        </div>
+        <div class="manual-navigation">
+          <label for="radio1" class="manual-btn" id="label1"></label>
+          <label for="radio2" class="manual-btn" id="label2"></label>
+          <label for="radio3" class="manual-btn" id="label3"></label>
+          <label for="radio4" class="manual-btn" id="label4"></label>
+        </div>
+      </div>
+      <div class="Texto">
+        <div id="titulo"></div>
+        <div id="conteudo">
+          <p id="Text">
+            "Shrek" é uma animação da DreamWorks que segue a jornada de um ogro
+            solitário que, com a ajuda do Burro, resgata a princesa Fiona de uma
+            torre guardada por um dragão para Lord Farquaad. Uma comédia
+            encantadora sobre aceitação e amor verdadeiro.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="NavBar">
+      <div class="Logo"></div>
+      <div class="NavButtons">
+        <a href="principal.html"><button>Filmes</button></a>
+        <button id="ativar" onclick="openModal()">Carrinho</button>
+      </div>
+    </div>
+    <div class="ContentWrapper">
+      <p id="t1">Catálogo de Produtos</p>
+      <a href="#go"><button class="Conferir">Quero Conferir!</button></a>
+    </div>
+    <div id="go" class="ContentWrapper row">
+      <div class="Card">
+        <div class="imgprod" id="bonequinho"></div>
+        <div class="nomeprod"><p>Pelúcia Shrek</p></div>
+        <div class="precoprod"><p>R$19,99</p></div>
+        <div class="btnprod"><button class="Conferir">Comprar</button></div>
+      </div>
+      <div class="Card">
+        <div class="imgprod" id="sacola"></div>
+        <div class="nomeprod"><p>Ecobag Shrek</p></div>
+        <div class="precoprod"><p>R$45,99</p></div>
+        <div class="btnprod"><button class="Conferir">Comprar</button></div>
+      </div>
+      <div class="Card">
+        <div class="imgprod" id="gorro"></div>
+        <div class="nomeprod"><p>Gorro Shrek</p></div>
+        <div class="precoprod"><p>R$20,99</p></div>
+        <div class="btnprod">
+          <button class="Conferir" onclick="adicionarAoCarrinho('1')">
+            Comprar
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="go" class="ContentWrapper row">
+      <div class="Card">
+        <div class="imgprod" id="sapato"></div>
+        <div class="nomeprod"><p>Crocs Shrek</p></div>
+        <div class="precoprod"><p>R$69,99</p></div>
+        <div class="btnprod"><button class="Conferir">Comprar</button></div>
+      </div>
+      <div class="Card">
+        <div class="imgprod" id="posterS"></div>
+        <div class="nomeprod"><p>Poster Shrek</p></div>
+        <div class="precoprod"><p>R$19,99</p></div>
+        <div class="btnprod"><button class="Conferir">Comprar</button></div>
+      </div>
+      <div class="Card">
+        <div class="imgprod" id="posterF"></div>
+        <div class="nomeprod"><p>Poster Fiona</p></div>
+        <div class="precoprod"><p>R$19,99</p></div>
+        <div class="btnprod"><button class="Conferir">Comprar</button></div>
+      </div>
+    </div>
+
+    <!--Modal-->
+    <div class="modal">
+      <div class="innerModal">
+        <h1>Carrinho</h1>
+        <div class="lista">
+          <div class="Item">
+            <div class="ItemImage"></div>
+            <div class="ItemName">Gorro Shrek R$19,99</div>
+            <div class="Conferir Remove">Remover</div>
+          </div>
+          <div class="Item">
+            <div class="ItemImage"></div>
+            <div class="ItemName">Poster Shrek R$19,99</div>
+            <div class="Conferir Remove">Remover</div>
+          </div>
+          <div class="Item">
+            <div class="ItemImage"></div>
+            <div class="ItemName">Crocs Shrek R$69,99</div>
+            <div class="Conferir Remove">Remover</div>
+          </div>
+          <div class="Item">
+            <div class="ItemImage"></div>
+            <div class="ItemName">Ecobag Shrek R$45,99</div>
+            <div class="Conferir Remove">Remover</div>
+          </div>
+          <div class="Item">
+            <div class="ItemImage"></div>
+            <div class="ItemName">Pelúcia Shrek R$19,99</div>
+            <div class="Conferir Remove">Remover</div>
+          </div>
+        </div>
+        <div class="buttonOr">
+          <button class="Conferir preto" onclick="closeModal()">
+            Finalizar Compra
+          </button>
+          <button class="Conferir preto" onclick="closeModal()">Fechar</button>
+        </div>
+      </div>
+    </div>
+    <!--Fim do Modal-->
+    <script src="script.js"></script>
+  </body>
+</html>
